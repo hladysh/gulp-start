@@ -1,0 +1,56 @@
+@import "sprite"
+@import "mixins"
+@import "normalize"
+$default-font: "Roboto", sans-serif
+
+/*  FONTS */
+/* ================================================ */
+@font-face
+	font-family: "Roboto"
+	src : url("../fonts/Roboto-Regular.ttf")
+	font-weight: 400
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.container
+	max-width: 1170px
+	margin-left: auto
+	margin-right: auto
+	padding-left: 15px
+	padding-right: 15px
+	clear: both
+	&:after
+		content: ''
+		display: table
+		clear: both
+.ic	
+	position: relative
+	display: inline-block
+	vertical-align: middle
+.btn
+	border: none
+	outline: none	
+	width: 228px
+	height: 51px
+	color: #ffffff
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 700
+	line-height: 35px
+	text-transform: uppercase
+	border-radius: 25px
+	+tr(0.5s)
+	
+/*  HEADER ================== */
+
+
+
+@import "media" /*always at the end */	
